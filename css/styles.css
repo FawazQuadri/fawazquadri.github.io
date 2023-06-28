@@ -1,6 +1,229 @@
-h2 {
-    font-family: 'Franklin Gothic Medium';
+.top-nav {
+    background-color: #43281c;
+    color: #fbf2c0;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: normal;
 }
 h1 {
-    font-family: 'Franklin Gothic Medium';
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #efefef;
+    font-family: 'Open Sans', sans-serif;
+}
+.logo {
+    height: 25px;
+    position: relative;
+    top: 3px;
+}
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+.order-list {
+    display: grid;
+    row-gap: 30px;
+    column-gap: 30px;
+    width: 100%;
+    padding: 30px;
+    margin: 0 auto;
+    grid-template-areas:
+        "order payment"
+        "total total";
+    grid-template-columns: 1fr 1fr;
+}
+.order-of-person-box {
+    background-color: #eee1d5;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 0.2);
+    padding: 15px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+* {
+    box-sizing: border-box;
+}
+section {
+    display: block;
+}
+.title-of-box {
+    color: #885a2d;
+    font-weight: normal;
+    font-size: 16px;
+}
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+.the-order-items {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.the-order-items {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+.Items {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.Items {
+    border-bottom: 2px solid #DDB892;
+    display: grid;
+    padding: 10px 0;
+    grid-template-columns: 1fr 8fr 1fr;
+    grid-template-areas:
+        "quantity title price"
+        "quantity options price";
+    row-gap: 8px;
+}
+.item-amount {
+    grid-area: quantity;
+}
+.item-title {
+    grid-area: title;
+    font-weight: bold;
+}
+.item-price {
+    grid-area: price;
+    font-weight: bold;
+}
+.toppings {
+    grid-area: options;
+    color: #B08968;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+}
+.payment {
+    grid-area: payment;
+    grid-row-start: payment;
+    grid-column-start: payment;
+    grid-row-end: payment;
+    grid-column-end: payment;
+}
+.username-box {
+    background-color: #eee1d5;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 0.2);
+    padding: 15px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+.title-box {
+    color: #885a2d;
+    font-weight: normal;
+    font-size: 16px;
+}
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+.input-name {
+    position: relative;
+    margin-bottom: 20px;
+}
+.user-input-lbl {
+    color: #885a2d;
+    background-color: #eee1d5;
+    font-size: 11px;
+    position: absolute;
+    left: 25px;
+    top: -7px;
+    padding: 0 2px;
+}
+.user-input {
+    background-color: rgba(0,0,0,0);
+    border: 2px #885a2d solid;
+    padding: 8px;
+    border-radius: 100px;
+    width: 100%;
+    text-indent: 18px;
+    font-size: 18px;
+}
+.cn-box {
+    background-color: #eee1d5;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 0.2);
+    padding: 15px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+.title-box2 {
+    color: #885a2d;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.user-input-lbl {
+    color: #885a2d;
+    background-color: #eee1d5;
+    font-size: 11px;
+    position: absolute;
+    left: 25px;
+    top: -7px;
+    padding: 0 2px;
+}
+.total-cost {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.total-cost {
+    grid-area: total;
+    grid-row-start: total;
+    grid-column-start: total;
+    grid-row-end: total;
+    grid-column-end: total;
+}
+.total-table {
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 30px;
+}
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+table {
+    border-collapse: separate;
+    text-indent: initial;
+    border-spacing: 2px;
+}
+.total-table td {
+    padding: 10px;
+}
+.final-total {
+    font-weight: bold;
 }

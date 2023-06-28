@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,22 +8,85 @@
 </head>
 
 <body>
-    <h1>Hi I'm Fawaz</h1>
-    <p>I like to play basketball and <span style="text-decoration: underline"> do html coding </span> stuff I guess.</p>
+    <nav class="top-nav">
+        <h1 class="brand">
+            <img src="https://btholt.github.io/complete-intro-to-web-dev-v3/images/coffee_masters_logo.png" alt="coffee_masters_logo" class="logo">
+            Coffee Masters
+        </h1>
+    </nav>
+    <div class="order-list">
+        <section class="order-of-person-box">
+            <h2 class="title-of-box">Items</h2>
+            <ul class="the-order-items">
+                <li class="Items">
+                    <div class="item-amount">1x</div>
+                    <div class="item-title">Cappucino</div>
+                    <div class="item-price">$6.00</div>
+                    <ul class="toppings">
+                        <li class="topping-choice">Light Foam</li>
+                    </ul>
+                </li>
+                <li class="Items">
+                    <div class="item-amount">1x</div>
+                    <div class="item-title">Cappucino</div>
+                    <div class="item-price">$7.90</div>
+                    <ul class="toppings">
+                        <li class="topping-choice">Almond Milk</li>
+                        <li class="topping-choice">Double Espresso Shot</li>
+                    </ul>
+                </li>
+                <li class="Items">
+                    <div class="item-amount">1x</div>
+                    <div class="item-title">Croissant</div>
+                    <div class="item-price">$5.37</div>
+                    <ul class="toppings">
+                        <li class="topping-choice">Butter</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+        <section class="payment">
+            <div class="username-box">
+                <h2 class="title-box">NAME</h2>
+                <div class="input-name">
+                    <label class="user-input-lbl" for="name">Name for Order</label>
+                    <input type="text" class="user-input" id="name">
+                </div>
+            </div>
+            <div class="cn-box">
+                <h2 class="title-box2">PAYMENT</h2>
+                <div class="input-card-number">
+                    <label class="user-input-lbl" for="cn">Card Number</label>
+                    <input type="text" class="user-input" id="cn">
+                </div>
+                <div class="ccv-box">
+                    <h2 class="title-box2">CCV Number</h2>
+                    <div class="input-ccv">
+                        <label class="user-input-lbl" for="ccv">CCV Number</label>
+                        <input type="text" class="user-input" id="ccv">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="total-cost">
+            <table class="total-table">
+                <tbody>
+                    <tr>
+                        <td>Subtotal:</td>
+                        <td>$19.27</td>
+                    </tr>
+                    <tr>
+                        <td>Tax:</td>
+                        <td>$0.96</td>
+                    </tr>
+                    <tr class="final-total">
+                        <td>Total:</td>
+                        <td>$20.23</td>
+                    </tr>
+                </tbody>
+            </table>
+            <button class="head-to-checkout" type="button">Place Order</button>
+        </section>
     </div>
-
-    <ul>
-        <li><a class="navbar" href="index.html">home</a></li>
-        <li><a class="navbar" href="aboutme.html">about me</a></li>
-        <li><a class="navbar" href="contact.asp">Contact</a></li>
-        <li><a class="navbar" href="photos.asp">photos</a></li>
-    </ul>
-
-    <h2>This is another heading to play with.</h2>
-    <p>My name is Fawaz and im in Kumanan Uncles HTML Coding Bootcamp and this is a website I made because
-        im too good at this game
-    </p>
-    <h1>This is another heading. Just bigger</h1>
 </body>
-
 </html>
