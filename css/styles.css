@@ -270,3 +270,10 @@ tr {
 .topping-choice {
     margin-bottom: 5px
 }
+
+@media screen and (max-width:500px) {
+    .order-list{
+        display: flex;
+        flex-direction: column;
+    }
+}
